@@ -1,0 +1,14 @@
+.birthday-container{
+  max-width: 1240px;
+  margin: auto;
+}
+
+.birthday-title{
+  font-size: 45px;
+  @include birtday-font-regular;
+  text-align: center;
+}
+
+@import "present-block/gift-box";
+@import "present-block/fire-works/fireworks";
+@import "present-block/cake/cake";

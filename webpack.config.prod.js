@@ -3,7 +3,6 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const JavaScriptObfuscator = require('webpack-obfuscator');
 
 const rootPath = path.resolve(__dirname, "src");
@@ -70,17 +69,13 @@ module.exports = {
             }
         ]
     },
-    watch: true,
+    watch: false,
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(rootPath, './index.html')
         }),
 
         new ExtractTextPlugin({ filename: './[name].css', disable: false, allChunks: true }),
-        new CopyWebpackPlugin([
-            { from: 'assets/images', to: 'images/' },
-            { from: 'backend/', to: 'backend/' }
-        ]),
         new JavaScriptObfuscator ({
             rotateUnicodeArray: true
         }, ['[name].js'])

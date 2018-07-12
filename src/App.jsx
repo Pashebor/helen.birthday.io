@@ -4,11 +4,11 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import middleWare from 'redux-thunk';
 import reducers from './reducers';
-import MyApp from './components/MyApp';
+import HelenBirthDayApp from './components/HelenBirthDayApp';
 
 const store = createStore(reducers, {}, applyMiddleware(middleWare));
 
-const App = () => <MyApp/>;
+const App = () => <HelenBirthDayApp/>;
 
 
 

@@ -20,6 +20,14 @@
 }
 
 @font-face {
+  font-family: BirthdayFont;
+  src: url(../fonts/birthday-font.ttf);
+  src: url(../fonts/birthday-font.ttf)format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: OpenSansRegular;
   src: url(../fonts/OpenSansRegular.eot);
   src: url(../fonts/OpenSansRegular.eot?#iefix)format("embedded-opentype"), url(../fonts/OpenSans-Regular.ttf)format("truetype");

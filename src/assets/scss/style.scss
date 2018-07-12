@@ -3,27 +3,11 @@
 @import "variables";
 @import "icons";
 @import "../../components/elements/elements";
+@import "./../../components/main";
 
 body{
-  @include main-theme-font-regular;
   font-size: 16px;
+  background-color: $body-color;
+  overflow: hidden;
 }
 
-.app{
-  display: flex;
-}
-
-.title{
-  @include main-theme-font-regular;
-  text-align: center;
-  &::before{
-    padding-right: 10px;
-  }
-  &::after{
-    font-family: FontAwesome, sans-serif;
-    @include heart-icon;
-    font-size: 30px;
-    color: red;
-    padding-left: 10px;
-  }
-}

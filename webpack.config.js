@@ -76,9 +76,9 @@ module.exports = {
         }),
 
         new ExtractTextPlugin({ filename: './[name].css', disable: false, allChunks: true }),
-        new CopyWebpackPlugin([
+        /*new CopyWebpackPlugin([
             { from: 'assets/images', to: 'images/' },
             { from: 'backend/', to: 'backend/' }
-        ])
+        ])*/
     ]
 };
