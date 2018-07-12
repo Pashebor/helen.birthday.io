@@ -2,6 +2,8 @@ import React from 'react';
 import GiftBox from './present-block/GiftBox';
 import FireWorks from  './present-block/fire-works/FireWorks'
 import Cake from  './present-block/cake/Cake'
+import Cat from "./present-block/cat/Cat"
+import Dog from "./present-block/dog/Dog"
 
 class HelenBirthDayApp extends React.Component{
   constructor(props) {
@@ -35,9 +37,11 @@ class HelenBirthDayApp extends React.Component{
   render() {
         return(
             <main className={'birthday-container'}>
+              <Cat/>
               {this.state.isFireWorkLaunch ? <FireWorks/> : null}
               <Cake/>
               <GiftBox step={this.state.step} click={this.giftBoxClickHandler.bind(this)}/>
+              <Dog/>
             </main>
         )
     }
